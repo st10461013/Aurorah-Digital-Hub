@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurorah Digital Hub - Website Site Map</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--line:#9bb3d1;--text:#16324f;--accent:#4a7bd1;--accent2:#6bbf59;--admin:#b04a4a;}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px;}
+    .wrap{max-width:1100px;margin:0 auto;}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:0 0 20px;line-height:1.5}
+    .sitemap{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:flex-start;}
+    .node{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px 18px;min-width:180px;text-align:center;box-shadow:0 8px 24px rgba(22,50,79,.08)}
+    .root{border-color:var(--accent);font-weight:bold;font-size:18px;background:#eef4ff}
+    .adminroot{border-color:var(--admin);background:#fff1f1}
+    .col{display:flex;flex-direction:column;gap:16px;align-items:center}
+    .children{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+    .branch{display:flex;flex-direction:column;align-items:center;gap:14px}
+    .label{font-size:13px;opacity:.8;margin-top:4px}
+    .admin{border-color:var(--admin)}
+    .public{border-color:var(--accent2)}
+    .line{height:22px;width:2px;background:var(--line)}
+    .rowline{height:2px;background:var(--line);width:min(720px,90vw);margin:0 auto}
+    .note{margin-top:24px;padding:14px 16px;background:#fff;border-left:5px solid var(--accent);border-radius:10px}
+    @media (max-width:700px){.children{flex-direction:column;align-items:center}.rowline{width:2px;height:24px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Aurorah Digital Hub Website Site Map</h1>
+    <p>Public navigation, forms, news, and a separate restricted admin area.</p>
+
+    <div class="sitemap">
+      <div class="col">
+        <div class="node root">Home Page</div>
+        <div class="line"></div>
+        <div class="children">
+          <div class="branch">
+            <div class="node public">Volunteer Registration</div>
+          </div>
+          <div class="branch">
+            <div class="node public">Beneficiary Registration</div>
+          </div>
+          <div class="branch">
+            <div class="node public">Donation Portal</div>
+          </div>
+          <div class="branch">
+            <div class="node public">News Feed</div>
+          </div>
+          <div class="branch">
+            <div class="node adminroot">Admin Login</div>
+            <div class="line"></div>
+            <div class="node admin">Admin Dashboard</div>
+            <div class="line"></div>
+            <div class="node admin">Reports Area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Structure note:</strong> The Home Page is reachable from every public page. The admin section is separated behind login and is not exposed in public navigation.
+    </div>
+  </div>
+</body>
+</html>
