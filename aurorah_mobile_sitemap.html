@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurorah Digital Hub - Mobile App Site Map</title>
+  <style>
+    :root{--bg:#f5f7fb;--card:#ffffff;--line:#93a7c3;--text:#15324a;--accent:#3c82d6;--accent2:#5aa96b;--accent3:#f0a23b;}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px;}
+    .wrap{max-width:980px;margin:0 auto;}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:0 0 20px;line-height:1.5}
+    .app{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;align-items:flex-start;}
+    .phone{width:min(310px,90vw);background:#111827;border-radius:34px;padding:14px;box-shadow:0 18px 40px rgba(0,0,0,.14)}
+    .screen{background:linear-gradient(180deg,#ffffff,#eef4ff);border-radius:24px;padding:18px;min-height:540px;display:flex;flex-direction:column;gap:14px}
+    .status{height:14px;width:38%;background:#d6e1f0;border-radius:999px;margin:0 auto 4px}
+    .header{font-weight:bold;font-size:20px;text-align:center}
+    .sub{font-size:13px;text-align:center;opacity:.8;margin-bottom:8px}
+    .card{background:var(--card);border:2px solid #d4deeb;border-radius:16px;padding:14px 16px;box-shadow:0 6px 18px rgba(21,50,74,.06);text-align:center;font-weight:600}
+    .home{border-color:var(--accent);background:#edf4ff}
+    .action1{border-color:var(--accent2)}
+    .action2{border-color:var(--accent3)}
+    .action3{border-color:#7b7bdc}
+    .action4{border-color:#6f8ea8}
+    .connector{height:18px;width:2px;background:var(--line);align-self:center}
+    .footer{margin-top:auto;font-size:12px;text-align:center;opacity:.75;padding-top:10px}
+    .note{margin-top:24px;padding:14px 16px;background:#fff;border-left:5px solid var(--accent);border-radius:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Aurorah Digital Hub Mobile App Site Map</h1>
+    <p>Single-hand-friendly flow focused on quick actions after login.</p>
+
+    <div class="app">
+      <div class="phone">
+        <div class="screen">
+          <div class="status"></div>
+          <div class="header">App Launch / Login</div>
+          <div class="connector"></div>
+          <div class="card home">Home Feed</div>
+          <div class="sub">First screen after login with quick access to the main actions.</div>
+          <div class="card action1">Volunteer Sign-up</div>
+          <div class="card action2">Request Assistance</div>
+          <div class="card action3">Donate</div>
+          <div class="card action4">Profile &amp; Settings</div>
+          <div class="footer">Profile &amp; Settings replaces the website admin area on mobile.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Structure note:</strong> The app reuses the same underlying forms as the website, so submissions can reach the same database tables.
+    </div>
+  </div>
+</body>
+</html>
